@@ -8,7 +8,7 @@ const weatherInfoEl = document.querySelector('.weatherinfo')
 const temperatureEl = document.querySelector('.temperature')
 const cityNameEl = document.querySelector('.h2heading')
 const img = document.querySelector('.img')
-const
+
 
 
 // const updateUI = function(cityInfo, weatherData) {
@@ -27,11 +27,16 @@ const
 //     }
 // }
 
+
+
+
 form.addEventListener('submit', function(e) {
     e.preventDefault()
     const city = form.location.value.trim()
 
     // running main app
     mainApp(city)
+
+
 
 })
