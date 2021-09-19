@@ -27,12 +27,17 @@ const img = document.querySelector('.img')
 //     }
 // }
 
+if (localStorage.getItem('city')) {
+    const city = localStorage.getItem('city')
+    mainApp(city)
+}
 
 
 
 form.addEventListener('submit', function(e) {
     e.preventDefault()
     const city = form.location.value.trim()
+    localStorage.setItem('city', city)
 
     // running main app
     mainApp(city)
